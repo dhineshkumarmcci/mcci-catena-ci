@@ -140,6 +140,12 @@ function _setup_board_package {
     fi
 }
 
+
+#### set up the Catena-Arduino-Platform: $1 is path
+function _setup_Catena-Arduino-Platform {
+    _assert_setup_env
+    }
+
 #### set up the lmic: $1 is path
 function _setup_lmic {
     _assert_setup_env
