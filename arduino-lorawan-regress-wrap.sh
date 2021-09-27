@@ -234,7 +234,7 @@ function _compile {
     # shellcheck disable=2207
     MCCI_EXAMPLES_ALL=($(_list_examples "$OPTLIBRARY"))
 
-    # for group of sketch with uncontinuous index number (ex: 0, 2, 4, 5)
+    # for group of sketch with uncontinuous index number (ex: 0, 1, 3, 4)
     _boxverbose "Examples:" "${MCCI_EXAMPLES_ALL[@]}" 
     for i in "${MCCI_EXAMPLES_ALL[@]}"; do
     	if [[ $j -le 4 ]] && [[ $k -eq ${B_INDEX[$j]} ]]; then
